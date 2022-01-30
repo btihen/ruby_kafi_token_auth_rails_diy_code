@@ -1,4 +1,4 @@
 Hi <%= @user.name %>,
-Access-Link for <%= @host_name %> is:
+<%= @host_name %> - Access-Link is:
 <%= @auth_url %>
-This link is valid for an hour from <%= DateTime.now %>.
+This link is valid until: <%= DateTime.now + 15.minutes %>.
